@@ -22,13 +22,16 @@ const useSignup = () => {
     if (!success) return;
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", {
-        fullname,
-        username,
-        password,
-        confirmPassword,
-        gender,
-      });
+      const res = await axios.post(
+        "https://whatsappweb-clone.onrender.com/api/auth/signup",
+        {
+          fullname,
+          username,
+          password,
+          confirmPassword,
+          gender,
+        }
+      );
       const data = res.data; // Access the response data directly
       console.log(data);
       if(data.error){

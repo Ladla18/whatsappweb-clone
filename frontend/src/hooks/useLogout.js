@@ -12,7 +12,7 @@ const useLogout = ()=>{
 
         try {
             const res = await axios.post(
-              "http://localhost:5000/api/auth/logout"
+              "https://whatsappweb-clone.onrender.com/api/auth/logout"
             );
             const data = res.data
             if(data.error){

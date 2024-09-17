@@ -10,7 +10,7 @@ const useSendMessage = ()=>{
     const sendMessage = async (message) => {
       try {
         const res = await axios.post(
-          `http://localhost:5000/api/messages/send/${selectedConversation._id}`,
+          `https://whatsappweb-clone.onrender.com/api/messages/send/${selectedConversation._id}`,
           { message }
         );
         const data = res.data;

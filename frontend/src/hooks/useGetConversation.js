@@ -10,7 +10,9 @@ useEffect(()=>{
         setLooading(true);
 
         try {
-            const res = await axios.get("http://localhost:5000/api/users");
+            const res = await axios.get(
+              "https://whatsappweb-clone.onrender.com/api/users"
+            );
             const data = res.data
             if(data.error){
                 throw new Error(data.error)

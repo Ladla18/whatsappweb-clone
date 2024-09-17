@@ -12,7 +12,7 @@ const useGetMessages = () => {
 
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/messages/${selectedConversation._id}`
+          `https://whatsappweb-clone.onrender.com/api/messages/${selectedConversation._id}`
         );
         const data = res.data;
         

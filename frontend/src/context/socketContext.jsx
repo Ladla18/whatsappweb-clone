@@ -17,7 +17,7 @@ export const SocketContextProvider = ({ children }) => {
     // Only connect if authUser exists
     if (authUser) {
       // Avoid shadowing the state variable "socket"
-      const newSocket = io("http://localhost:5000", {
+      const newSocket = io("https://whatsappweb-clone.onrender.com", {
         query: {
           userId: authUser._id,
         },

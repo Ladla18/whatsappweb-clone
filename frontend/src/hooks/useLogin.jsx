@@ -14,10 +14,13 @@ const useLogin = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
-        username,
-        password,
-      });
+      const res = await axios.post(
+        "https://whatsappweb-clone.onrender.com/api/auth/login",
+        {
+          username,
+          password,
+        }
+      );
       const data = res.data;
       if (data.error) {
         throw new Error(data.error);
