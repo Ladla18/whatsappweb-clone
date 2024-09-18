@@ -8,7 +8,7 @@ const generateTokenAndSetCookie = (userId, res) => {
     httpOnly: true, //PREVENT XSS ATTACKS ,not accessible by js
     maxAge: 15 * 24 * 60 * 60 * 1000,
     sameSite: "strict", 
-    
+    secure:true;
   });
     
 };
