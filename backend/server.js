@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 dotenv.config();
 app.use(
   cors({
-    origin: "https://whatsappclone-frontend-tvts.onrender.com/", // Replace with your frontend URL
+    origin: "https://whatsappclone-frontend-tvts.onrender.com", // Replace with your frontend URL
     credentials: true, // Allow credentials (cookies) to be sent
   })
 );
